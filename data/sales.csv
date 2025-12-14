@@ -1,0 +1,5 @@
+order_id,customer,country,amount
+1001,Alice,USA,120.5
+1002,Bob,India,75
+1003,Chandra,India,220
+1004,Elan,USA,90
