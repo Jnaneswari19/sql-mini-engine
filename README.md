@@ -1,5 +1,9 @@
 # SQL Mini Engine
 
+![Python](https://img.shields.io/badge/python-3.11-blue)
+![Tests](https://img.shields.io/badge/tests-11%20passed-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+
 A lightweight SQL engine built in Python that parses and executes simple SQL queries (`SELECT`, `COUNT`, `WHERE`) against CSV and CCOL (custom columnar format) data.
 
 ---
@@ -16,12 +20,19 @@ A lightweight SQL engine built in Python that parses and executes simple SQL que
 
 ---
 
-## 🚀 Usage
+## 🔧 Installation
 
-Install dependencies:
+Clone the repository and install dependencies:
+
 ```powershell
+git clone https://github.com/Jnaneswari19/sql-mini-engine.git
+cd sql-mini-engine
 pip install -r requirements.txt
 ```
+
+---
+
+## 🚀 Usage
 
 Run queries via CLI:
 ```powershell
@@ -31,6 +42,16 @@ python -m sqlmini.cli "SELECT name, age FROM people WHERE age >= 30;"
 Run tests:
 ```powershell
 python -m pytest
+```
+
+---
+
+## 📝 Example Queries
+
+```powershell
+python -m sqlmini.cli "SELECT COUNT(*) FROM sales;"
+python -m sqlmini.cli "SELECT name FROM people WHERE age < 25;"
+python -m sqlmini.cli "SELECT COUNT(age) FROM people WHERE age >= 30;"
 ```
 
 ---
@@ -62,6 +83,8 @@ python -m pytest
 sql-mini-engine/
 │   README.md
 │   requirements.txt
+│   LICENSE
+│   .gitignore
 │
 ├── data/
 │   people.csv
@@ -122,3 +145,15 @@ sql-mini-engine/
 - [x] Selective reads working  
 - [x] String offsets optimization verified  
 - [x] README polished with proof screenshots  
+- [x] Installation section added  
+- [x] Extra query examples added  
+- [x] LICENSE file included  
+- [x] Root `.gitignore` included  
+
+---
+
+## 📄 License
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+---
+
